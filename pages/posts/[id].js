@@ -10,7 +10,15 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 // Styles
 import utilStyles from '../../styles/utils.module.css'
 
+import Prism from 'prismjs';
+import { useEffect } from 'react'
+
 export default function Post({ postData }) {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+        Prism.highlightAll();
+    }
+  }, [])
   return (
     <Layout>
       <Head>
