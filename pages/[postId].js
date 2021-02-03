@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
 // Components
-import Layout from '../../components/layout'
-import Date from '../../components/date'
+import Layout from '../components/layout'
+import Date from '../components/date'
 
 // Libs
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPostIds, getPostData } from '../lib/posts'
 
 // Styles
-import utilStyles from '../../styles/utils.module.css'
+import utilStyles from '../styles/utils.module.css'
 
 import Prism from 'prismjs';
 import { useEffect } from 'react'
@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.postId)
   return {
     props: {
       postData
