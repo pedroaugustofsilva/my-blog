@@ -1,6 +1,8 @@
 ---
 title: 'Para que serve o "use strict" no Javascript'
 date: "2020-02-02"
+type: "article"
+categories: "javascript"
 ---
 
 O **"use strict";** é muito usado em várias bibliotecas javascript.

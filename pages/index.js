@@ -15,7 +15,7 @@ import indexStyles from './index.module.css'
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout Home>
       <Head>
         <title>{siteTitle}</title>
       </Head>

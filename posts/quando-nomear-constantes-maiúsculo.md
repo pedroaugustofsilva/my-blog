@@ -1,6 +1,8 @@
 ---
 title: "Quando nomear constantes em maiúsculo"
 date: "2020-02-01"
+type: "article"
+categories: "javascript"
 ---
 
 > "Numa batida de olho nos nomes das variáveis é possível saber
