@@ -1,7 +1,7 @@
 ---
 title: 'Não use mais var no Javascript'
 date: "2020-02-03"
-type: "article"
+type: "tip"
 categories: "javascript"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Para que serve o "use strict" no Javascript'
 date: "2020-02-02"
-type: "article"
+type: "tip"
 categories: "javascript"
 ---
 
