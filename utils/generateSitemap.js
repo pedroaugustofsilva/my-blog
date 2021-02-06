@@ -3,10 +3,6 @@ const globby = require('globby')
 
 async function generateSitemap() {
   const pages = await globby([
-    'pages/**/*.js',
-    '!pages/_*.js',
-    '!pages/**/[id].js',
-    '!pages/api',
     'posts/*.md'
   ])
 
@@ -19,10 +15,12 @@ async function generateSitemap() {
                 .replace('pages', '')
                 .replace('.js', '')
                 .replace('.md', '')
+                .replace('posts/', '')
+
               const route = path === '/index' ? '' : path
               return `
                       <url>
-                          <loc>${`https://debounce.com.br/${route}`}</loc>
+                          <loc>${`https://pedrofs.com.br/${route}`}</loc>
                       </url>
                   `
             })
